@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Proxy Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="tab-container">
+      <!-- Buttons NEW !!! --------------------------------------------------------> 
+      <div class="tab-buttons" id="tabButtons">
+        
+        <button class="activetab" data-tab="1">
+          <span class="tab-label">Tab 1</span>
+        </button>
+
+        <button class="inactivetab" data-tab="2">
+          <span class="tab-label">Tab 2</span>
+          
+        </button>
+        <button class="newtab" onclick="addNewTab()">➕</button>
+        
+      </div>
+
+      <!-- Tab 1 -->
+      <div id="tab1Content" class="tab-content activecontent">
+        <h3>Proxy Page</h3>
+        <p>This is a proxy page created by Cassidy</p>
+        <div class="proxy-enter">
+          <input type="text" id="InputId" placeholder="Enter a website URL" />
+          <button id="EnterButton">Enter</button>
+        </div>
+        <div class="tab-selector" id="tabSelector" style="display: none">
+          <label for="tabSelect">Open URL in:</label>
+          <select id="tabSelect">
+            <option value="tab2Content">Tab 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Tab 2 -->
+      <div id="tab2Content" class="tab-content inactivecontent">
+        <h3>Tab 2</h3>
+        <p>Proxy Page Output:</p>
+        <iframe id="Frame2"></iframe>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
